@@ -1,0 +1,30 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-toolbar>
+      <ion-title>Observador</ion-title>
+    </ion-toolbar>
+    <ion-list>
+      <button ion-item *ngFor="let tab of menuList; let i = index" (click)="clickItemMenu(i)">
+        {{tab.title}}
+      </button>
+      
+    </ion-list>
+
+    <ion-toolbar *ngIf="menuList2">
+      <ion-title>Libreta</ion-title>
+    </ion-toolbar>
+    <ion-list *ngIf="menuList2">
+      <button ion-item *ngFor="let tab2 of menuList2; let i = index" (click)="clickItemMenu2(i)">
+        {{tab2.title}}
+      </button>
+      
+    </ion-list>
+    
+  </ion-content>
+</ion-menu>
+<ion-nav #content [root]="rootPage"></ion-nav>
