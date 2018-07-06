@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController, Events, Tabs } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { AuthPage } from '../auth/auth';
 
 @Component({
   selector: 'page-tabs',
@@ -15,9 +16,9 @@ export class TabsPage {
 		data:"titulo menu1"
 	},
 	{
-		title:"menu2",
-		page:HomePage,
-		data:"titulo menu2"
+		title:"auth",
+		page:AuthPage,
+		data:"Autenticacion"
 	},
 	{
 		title:"menu3",

@@ -7,9 +7,60 @@
 </ion-header>
 
 <ion-content padding>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
   The world is your oyster.
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
+  <input type="time" [(ngModel)]="time" name="time">
+  <ion-input type="time"></ion-input>
+  <input type="file" class="form-control-file" id="exampleFormControlFile1" [(ngModel)]="pathFile" name="pathFile">
   <button ion-button (click)="clickOtherPage()" > go to other PAGE</button>
+  <button [disabled]="!pathFile || !time " ion-button (click)="mostrarValueFile()">mostrar valor del archivo</button>
+  <ion-card>
+  <ion-card-header>
+    
+    <ion-item>
+      header jaklfjak;jdfk;jadkf jadkf asdjkjfadjkfjadlkjfkadljfklad;jfkl;ajkfl;adj;klfa;dkljfadkjfalkdjfa;djjk;aj
+      <button ion-button outline item-end icon-start icon-only>
+      <ion-icon name="star"></ion-icon>
+    </button>
+    </ion-item>
+  </ion-card-header>
+  <ion-card-content>
+    The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+  </ion-card-content>
+</ion-card>
+<div class="card">
+  <div class="card-header" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false">
+    Featured
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="collapse" id="collapseExample"> 
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+  </div>
+  
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+        <input type="text" class="form-control"  value="hola" name="">
+    </div>
+    <div class="col-6">
+        <input type="text" class="form-control"  value="hola" name="">
+    </div>
+  </div>
+  
+</div>
 </ion-content>

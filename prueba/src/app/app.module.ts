@@ -11,6 +11,8 @@ import { OtherPage } from '../pages/otherPage/otherPage';
 import { OtherPage2 } from '../pages/otherPage2/otherPage2';
 
 import { Tabs2Page } from '../pages/tabs2/tabs2';
+import { AuthPage } from '../pages/auth/auth';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { Tabs2Page } from '../pages/tabs2/tabs2';
     TabsPage,
     OtherPage,
     Tabs2Page,
-    OtherPage2
+    OtherPage2,
+    AuthPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { Tabs2Page } from '../pages/tabs2/tabs2';
     TabsPage,
     OtherPage,
     Tabs2Page,
-    OtherPage2
+    OtherPage2,
+    AuthPage
   ],
   providers: [
     StatusBar,
