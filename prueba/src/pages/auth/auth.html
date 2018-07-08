@@ -7,11 +7,7 @@
 </ion-header>
 
 <ion-content padding>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
+
 
   <div padding text-center >
     <img src="./assets/imgs/user.png">
@@ -27,6 +23,10 @@
     </ion-item>
     <br>
     <button [disabled]="form.username!=temp.username || form.password!=temp.password " ion-button  block (click)="clickOtherPage()">Ingresar</button>
+
+    <button ion-button  block (click)="get()">GET</button>
+
+    <button ion-button  block (click)="attemptAuth()">Ingresar</button>
     
     
     <br>
@@ -40,8 +40,16 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroupPrepend2">@</span>
         </div>
-        <input type="text" class="form-control form-control-lg" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+        <input [(ngModel)]="url" type="text" class="form-control form-control-lg" id="validationDefaultUsername" placeholder="url" aria-describedby="inputGroupPrepend2" required>
       </div>
   </div>
+  <h3>aqui ira la data de la network</h3>
+  <p>
+    {{dataNetwork}}
+  </p>
+  <br>
+  <p>
+    {{errorNetwork}}
+  </p>
   
 </ion-content>
