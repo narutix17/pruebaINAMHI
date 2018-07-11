@@ -13,6 +13,9 @@ import { OtherPage2 } from '../pages/otherPage2/otherPage2';
 import { Tabs2Page } from '../pages/tabs2/tabs2';
 import { AuthPage } from '../pages/auth/auth';
 
+import { HTTP } from '@ionic-native/http';
+import { Network } from '@ionic-native/network';
+
 
 @NgModule({
   declarations: [
@@ -41,6 +44,8 @@ import { AuthPage } from '../pages/auth/auth';
   providers: [
     StatusBar,
     SplashScreen,
+    HTTP,
+    Network,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
