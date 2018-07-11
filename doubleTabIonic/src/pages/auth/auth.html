@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+                <ion-icon name="menu"></ion-icon>
+         </button>
+      <ion-title>
+        auth
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+
+    <form action="">
+        <ion-item>
+            <ion-label color="primary" fixed>Usuario</ion-label>
+            <ion-input placeholder="Usuario"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" fixed>Contraseña</ion-label>
+            <ion-input placeholder="Contraseña"></ion-input>
+        </ion-item>
+        <button ion-button full (click)="submit()">Acceder</button>
+    </form>
+  </ion-content>
+  

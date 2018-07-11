@@ -1,0 +1,258 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Grid
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    
+    
+    
+    <div class="table-responsive">
+        <table class="table table-bordered table-sm" >
+                <caption>BAROMETRO</caption>
+                <thead class="thead-dark">
+                        <tr>
+                                <th>Horas</th>
+                                <th>Lect. term. adj (°C)</th>
+                                <th>Lect. directa (mmHg)</th> 
+                                <th>Pres. corregida (hPa)	</th>
+                                <th>Pres. convert (hPa)</th>
+                                <th>Pres. redc. nivel mar (hPa)</th> 
+                                
+                        </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>07:00</td>
+                            <td>
+                                <select class="form-control">
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="audi">Audi</option>
+                                </select>
+                            </td>
+                            <td><input class="form-control" type="text" value="" ></td>
+                            <td><input class="form-control" type="text" value="" [(ngModel)]="temperatura" name="temperatura"></td>
+                            <td style="text-align: center" rowspan="4">
+                                <button ion-button icon-only (click)="clickButton()">
+                                    <ion-icon name="calculator"></ion-icon>
+                                </button></td>
+                            <td><input class="form-control" type="text" value="" disabled></td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>
+                                <select class="form-control">
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="audi">Audi</option>
+                                </select>
+                            </td>
+                            <td><input class="form-control" type="text" value=""></td>
+                            <td><input class="form-control" type="text" value=""></td>
+                            <td><input class="form-control" type="text" value="" disabled></td>
+                        </tr>
+                        <tr>
+                            <td>13:00</td>
+                            <td>
+                                    <select class="form-control">
+                                            <option value="volvo">Volvo</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="mercedes">Mercedes</option>
+                                            <option value="audi">Audi</option>
+                                    </select>
+                                </td>
+                                <td><input class="form-control" type="text" value=""></td>
+                                <td><input class="form-control" type="text" value=""></td>
+                                <td><input class="form-control" type="text" value="" disabled></td>
+                        </tr>
+                        <tr>
+                            <td>19:00	</td>
+                            <td>
+                                    <select class="form-control">
+                                            <option value="volvo">Volvo</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="mercedes">Mercedes</option>
+                                            <option value="audi">Audi</option>
+                                    </select>
+                                </td>
+                                <td><input class="form-control" type="text" value=""></td>
+                                <td><input class="form-control" type="text" value=""></td>
+                                <td><input class="form-control" type="text" value="" disabled></td>
+                        </tr>
+                </tbody>
+                
+                </table>
+    </div>
+
+    <div class="table-responsive">
+            <table class="table table-bordered table-sm" >
+                    <caption>BAROMETRO</caption>
+                    <thead class="thead-dark">
+                            <tr>
+                                    <th>Horas</th>
+                                    <th>Lect. term. adj (°C)</th>
+                                    <th>Lect. directa (mmHg)</th> 
+                                    <th>Pres. corregida (hPa)	</th>
+                                    <th>Pres. convert (hPa)</th>
+                                    <th>Pres. redc. nivel mar (hPa)</th> 
+                                    
+                            </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                    <td>07:00</td>
+                                    <td>
+                                        <select class="form-control">
+                                                <option value="volvo">Volvo</option>
+                                                <option value="saab">Saab</option>
+                                                <option value="mercedes">Mercedes</option>
+                                                <option value="audi">Audi</option>
+                                        </select>
+                                    </td>
+                                    <td><input class="form-control" type="text" value=""></td>
+                                    <td><input class="form-control" type="text" value=""></td>
+                                    <td style="text-align: center" rowspan="4">
+                                        <button ion-button icon-only>
+                                            <ion-icon name="calculator"></ion-icon>
+                                        </button></td>
+                                    <td><input class="form-control" type="text" value="" disabled></td>
+                                </tr>
+                                <tr>
+                                    <td>10:00</td>
+                                    <td>
+                                        <select class="form-control">
+                                                <option value="volvo">Volvo</option>
+                                                <option value="saab">Saab</option>
+                                                <option value="mercedes">Mercedes</option>
+                                                <option value="audi">Audi</option>
+                                        </select>
+                                    </td>
+                                    <td><input class="form-control" type="text" value=""></td>
+                                    <td><input class="form-control" type="text" value=""></td>
+                                    <td><input class="form-control" type="text" value="" disabled></td>
+                                </tr>
+                                <tr>
+                                    <td>13:00</td>
+                                    <td>
+                                            <select class="form-control">
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="mercedes">Mercedes</option>
+                                                    <option value="audi">Audi</option>
+                                            </select>
+                                        </td>
+                                        <td><input class="form-control" type="text" value=""></td>
+                                        <td><input class="form-control" type="text" value=""></td>
+                                        <td><input class="form-control" type="text" value="" disabled></td>
+                                </tr>
+                                <tr>
+                                    <td>19:00	</td>
+                                    <td>
+                                            <select class="form-control">
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="mercedes">Mercedes</option>
+                                                    <option value="audi">Audi</option>
+                                            </select>
+                                        </td>
+                                        <td><input class="form-control" type="text" value=""></td>
+                                        <td><input class="form-control" type="text" value=""></td>
+                                        <td><input class="form-control" type="text" value="" disabled></td>
+                                </tr>
+                    </tbody>
+                    
+                    </table>
+        </div>
+        <div class="table-responsive">
+                <table class="table table-bordered table-sm" >
+                        <caption>BAROMETRO</caption>
+                        <thead class="thead-dark">
+                                <tr>
+                                        <th>Horas</th>
+                                        <th>Lect. term. adj (°C)</th>
+                                        <th>Lect. directa (mmHg)</th> 
+                                        <th>Pres. corregida (hPa)	</th>
+                                        <th>Pres. convert (hPa)</th>
+                                        <th>Pres. redc. nivel mar (hPa)</th> 
+                                        
+                                </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                        <td>07:00</td>
+                                        <td>
+                                            <select class="form-control">
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="mercedes">Mercedes</option>
+                                                    <option value="audi">Audi</option>
+                                            </select>
+                                        </td>
+                                        <td><input class="form-control" type="text" value=""></td>
+                                        <td><input class="form-control" type="text" value=""></td>
+                                        <td style="text-align: center" rowspan="4">
+                                            <button ion-button icon-only>
+                                                <ion-icon name="calculator"></ion-icon>
+                                            </button></td>
+                                        <td><input class="form-control" type="text" value="" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:00</td>
+                                        <td>
+                                            <select class="form-control">
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="mercedes">Mercedes</option>
+                                                    <option value="audi">Audi</option>
+                                            </select>
+                                        </td>
+                                        <td><input class="form-control" type="text" value=""></td>
+                                        <td><input class="form-control" type="text" value=""></td>
+                                        <td><input class="form-control" type="text" value="" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td>13:00</td>
+                                        <td>
+                                                <select class="form-control">
+                                                        <option value="volvo">Volvo</option>
+                                                        <option value="saab">Saab</option>
+                                                        <option value="mercedes">Mercedes</option>
+                                                        <option value="audi">Audi</option>
+                                                </select>
+                                            </td>
+                                            <td><input class="form-control" type="text" value=""></td>
+                                            <td><input class="form-control" type="text" value=""></td>
+                                            <td><input class="form-control" type="text" value="" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td>19:00	</td>
+                                        <td>
+                                                <select class="form-control">
+                                                        <option value="volvo">Volvo</option>
+                                                        <option value="saab">Saab</option>
+                                                        <option value="mercedes">Mercedes</option>
+                                                        <option value="audi">Audi</option>
+                                                </select>
+                                            </td>
+                                            <td><input class="form-control" type="text" value=""></td>
+                                            <td><input class="form-control" type="text" value=""></td>
+                                            <td><input class="form-control" type="text" value="" disabled></td>
+                                    </tr>
+                        </tbody>
+                        
+                        </table>
+            </div>
+            <br>
+            <br>
+            <br>
+       
+                  
+    
+  </ion-content>
+  

@@ -1,0 +1,36 @@
+page-grid{
+    ion-col{
+        border: 1px solid black;
+        background: blueviolet;
+    }
+    ion-grid{
+        overflow-x: scroll;
+    }
+    /*
+    table{
+        
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        
+    }
+    */
+    
+   
+    /*
+
+    .forecast_container{
+        overflow-x: scroll!important;
+        overflow-y: hidden;
+        word-wrap: break-word;
+        height:20vw;
+        font-size:0.8em;
+        font-weight:300;
+}
+*/
+/*
+.search-table-outter { overflow-x: scroll; }
+*/
+}

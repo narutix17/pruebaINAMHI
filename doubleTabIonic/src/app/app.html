@@ -1,0 +1,96 @@
+<ion-menu [content]="content">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content style="background: #2b3542">
+            
+          <p>hola</p>
+            
+            <ul class="list-group">
+                <li class="list-group-item dropright" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample" (click)="click(this)">
+                  <span style="float:left">primera cosa</span>
+                  <i style="float:right;" class="dropdown-toggle"></i>
+                  
+                  
+                </li>
+                <div class="collapse show" id="collapseExample" style="color: green">
+                  <li href="#" class="list-group-item ">Dapibus ac facilisis in</li>
+                  <li class="list-group-item"><button ion-item clear>hola</button></li>
+                
+
+                  
+                
+                <li href="#" class="list-group-item ">Porta ac consectetur ac</li>
+                <li href="#" class="list-group-item ">Vestibulum at eros</li>
+                    
+                </div>
+                
+              </ul>
+
+
+              
+              <button ion-item color="primary" data-toggle="collapse" href="#collapseExamplex"  aria-expanded="false">
+                <ion-label item-start>General</ion-label>
+                <ion-icon item-end name="arrow-dropright" (click)="clickbutton"></ion-icon>
+              </button>
+              <div class="collapse" id="collapseExamplex">
+                <ion-list color="sidebarHeader" no-lines>
+                
+                  <button  ion-item color="sidebarHeader">
+                      <ion-icon name="home" item-start color="menuItemSelected"></ion-icon>
+                      <ion-label color="menuItemSelected">Principal</ion-label>
+                  </button>
+                  <button ion-item color="sidebarHeader">
+                      <ion-icon name="person" item-start ></ion-icon>
+                      <ion-label >Perfil</ion-label>
+                  </button>
+                  <button ion-item color="sidebarHeader">
+                      <ion-icon name="cloud-upload" item-start ></ion-icon>
+                      <ion-label>Libretas Enviadas</ion-label>
+                  </button>
+                  <button ion-item color="sidebarHeader">
+                      <ion-icon name="key" item-start ></ion-icon>
+                      <ion-label>Cerrar Sesion</ion-label>
+                  </button>
+
+
+      
+      
+                </ion-list>
+              </div>
+              <div *ngFor="let item of data;let i = index">
+                <button *ngIf="item.collapse" ion-item color="primary" data-toggle="collapse" [attr.href]="'#collapseExample'+i"  aria-expanded="false" (click)="clickbutton(i,'collapseExample'+i,$event)">
+                  <ion-label item-start>General</ion-label>
+                  <ion-icon *ngIf="item.expanded" item-end name="arrow-dropdown" ></ion-icon>
+                  <ion-icon *ngIf="!item.expanded" item-end name="arrow-dropright" ></ion-icon>
+                </button>
+                <div *ngIf="item.collapse" class="collapse" id="collapseExample{{i}}">
+                  <ion-list color="sidebarHeader" no-lines>
+                    <button  *ngFor="let item2 of item.children"  ion-item color="sidebarHeader">
+                        <ion-icon name="{{item2.icon}}" item-start color="menuItemSelected"></ion-icon>
+                        <ion-label color="menuItemSelected">{{item2.label}}</ion-label>
+                    </button>
+                  </ion-list>
+                </div>
+                <ion-list *ngIf="!item.collapse"color="sidebarHeader" no-lines>
+                
+                    <button *ngFor="let item3 of item.children"  ion-item color="sidebarHeader">
+                        <ion-icon name="{{item3.icon}}" item-start color="menuItemSelected"></ion-icon>
+                        <ion-label color="menuItemSelected">{{item3.label}}</ion-label>
+                    </button>
+                  </ion-list>
+
+              </div>
+              
+
+
+
+              
+
+              
+        </ion-content>
+</ion-menu>
+
+<ion-nav #content [root]="rootPage"></ion-nav>
