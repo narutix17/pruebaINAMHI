@@ -1,11 +1,44 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="sidebarHeader">
     <ion-title>
-      About
+      Principal
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding >
+
+
+<div padding >
+	<h6> Selecciona la fecha de la libreta que deseas editar o crear:</h6>
+	<ion-item color="sidebarHeader" style="border-radius: 5px">
+	  <ion-label> Calendario </ion-label>
+	  <ion-datetime cancelText="cancelar" doneText="seleccionar"  displayFormat="DD/MM/YYYY"  [(ngModel)]="mydate" ></ion-datetime>
+	  <ion-icon item-end name="calendar"></ion-icon>
+	</ion-item>
+</div>
+<button ion-button block color="morado"> Crear </button>
+
+
+<!--
+<input type="date" class="form-control" name="">
+<div class="input-group input-group-lg">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-lg"><i class="far fa-calendar-alt"></i></span>
+  </div>
+  <input type="time" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" [(ngModel)]="date2">
+</div>
+-->
+
+
+
+
+
+
+
+
+
+<!--
   <button ion-button (click)="clickGrid()">ir a Grid</button>
+-->
 </ion-content>

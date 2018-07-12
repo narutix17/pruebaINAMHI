@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { TabsPage } from '../tabs/tabs';
+import { AboutPage } from '../about/about';
 import {Validators, FormBuilder, FormGroup } from '@angular/forms';
-
-
 @Component({
   selector: 'page-auth',
   templateUrl: 'auth.html'
@@ -16,7 +14,7 @@ export class AuthPage {
   }
 
   submit(){
-      this.navCtrl.push(TabsPage);
+      this.navCtrl.push(AboutPage);
   }
 
 
